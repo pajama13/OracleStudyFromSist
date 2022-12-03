@@ -4,8 +4,8 @@ import java.sql.*;
 import java.util.*;
 public class MemberDAO {
 
-	private Connection conn;
-	private PreparedStatement ps;
+	private Connection conn; //DB 연결을 위한 Connection 객체 생성
+	private PreparedStatement ps; //SQL을 담는 PreparedStatement 객체 생성
 	private final String URL="jdbc:oracle:thin:@localhost:1521:xe";
 	
 	//드라이버 등록
@@ -13,6 +13,7 @@ public class MemberDAO {
 	{
 		try
 		{
+			//Driver 클래스 로드
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			
 		}catch(Exception ex){}
