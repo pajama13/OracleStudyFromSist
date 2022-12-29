@@ -1,0 +1,99 @@
+<!-- 
+
+  멀티미디어(이미지, 동영상)
+  
+  *img : 이미지 출력
+    -src : 이미지파일 등록 (같은폴더 ./ 다른폴더 ../) => include, 크롤링(원격) : 속도가 늦음
+    -width
+    -height
+    -title : 풍선 도움말
+  *a : 화면 이동
+    -href : 화면 이동할 파일명
+    -모든 화면 변경 => URL => 맨마지막에 파일명을 추가함
+     --------------------------------------- a.nhn, a.daum, a.do => 파일명을 사용자 정의로 만들 수 있음
+    -서버에 파일 만들어서 저장 => 사용자가 파일 요청 => 404
+          --- 중복이 없기 때문에
+  *embed
+  
+  
+  사용자 입력
+  *<input>
+    글쓰기, 수정하기, 회원가입, 삭제, 아이디 찾기, 로그인...
+  
+   <input>
+    |
+    type
+          데이터 입력 : size, name 속성 줘야 자바에서 받을 수 있음
+            text
+            password
+            file
+            date
+            
+          버튼 종류
+            button
+            reset
+            submit
+            image
+            radio
+            checkbox
+          
+          기타
+            number
+            range
+    
+    
+  *<textarea>
+    값을 추가할 때 <textarea>여기에 값 넣기</textarea>
+    이렇게 값 앞뒤로 여는 태그, 닫는 태그를 바로 붙여야 함!
+  *<select> 콤보
+    |
+   <option> 데이터 첨부
+  
+  화면 분할
+    div
+    span
+    header
+    section
+    footer
+    aside
+    article
+  
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+  <h1>&lt;select&gt; 멀티선택</h1>
+    <select>
+      <option>Java</option>
+      <option>Oracle</option>
+      <option>HTML/CSS : Bootstrap</option>
+      <option>JavaScript : JQuery, VueJS, React</option>
+      <option>JSP : MVC (Java(Model), JSP(View), Servlet(Controller))</option>
+      <!-- JSP는 퍼블리셔가 사용함 - model1, model2 -->
+      <option>Spring</option>
+      <option>AWS</option>
+    </select>
+    <h1>그룹별 처리</h1>
+    <select>
+      <optgroup label="Back-End">
+        <option>Java</option>
+        <option>Oracle</option>
+        <option>JSP</option>
+        <option>Spring</option>
+      </optgroup>
+    </select>    <select>
+    <optgroup label="Front-End">
+        <option>HTML/CSS</option>
+        <option>JavaScript</option>
+        <option>라이브러리(Ajax,vue,React)</option>
+        <option>TypeScript</option>
+      </optgroup>
+    </select>
+</body>
+</html>
+
+
