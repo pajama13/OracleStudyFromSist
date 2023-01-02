@@ -134,7 +134,7 @@ public class DataCollectionService {
                  {
                     //System.out.println(detail.get(i).text());
                     /*
-                     *   주소
+                      주소
                       전화번호
                       음식 종류
                       가격대

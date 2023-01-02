@@ -8,7 +8,7 @@ import java.sql.*;
 public class TripDAO {
 	private Connection conn;
 	private PreparedStatement ps;
-	private final String URL="jdbc:oracle:thin:@localhost:1521:XE";
+	private final String URL="jdbc:oracle:thin:@211.63.89.131:1521:XE";
 		
 	//드라이버 등록
 	public TripDAO()
@@ -45,7 +45,7 @@ public class TripDAO {
 		{
 			getConnection();
 			
-			String sql="INSERT INTO trip_4(tno,tcno,name,image,content,addr) VALUES(t_tno_seq_4.nextval,1,?,?,?,?)";
+			String sql="INSERT INTO gg_trip_4(tno,tcno,name,image,content,addr) VALUES(gt_tno_seq_4.nextval,1,?,?,?,?)";
 			
 			ps=conn.prepareStatement(sql);
 			//?에 값 채우기
@@ -73,7 +73,7 @@ public class TripDAO {
 		{
 			getConnection();
 			
-			String sql="INSERT INTO trip_4(tno,tcno,name,image,content,addr) VALUES(t_tno_seq_4.nextval,2,?,?,?,?)";
+			String sql="INSERT INTO gg_trip_4(tno,tcno,name,image,content,addr) VALUES(gt_tno_seq_4.nextval,2,?,?,?,?)";
 			
 			ps=conn.prepareStatement(sql);
 			//?에 값 채우기
@@ -102,7 +102,7 @@ public class TripDAO {
 		{
 			getConnection();
 			
-			String sql="INSERT INTO trip_4(tno,tcno,name,image,content,addr) VALUES(t_tno_seq_4.nextval,3,?,?,?,?)";
+			String sql="INSERT INTO gg_trip_4(tno,tcno,name,image,content,addr) VALUES(gt_tno_seq_4.nextval,3,?,?,?,?)";
 			
 			ps=conn.prepareStatement(sql);
 			//?에 값 채우기
@@ -131,7 +131,7 @@ public class TripDAO {
 		{
 			getConnection();
 			
-			String sql="INSERT INTO trip_4(tno,tcno,name,image,content,addr) VALUES(t_tno_seq_4.nextval,4,?,?,?,?)";
+			String sql="INSERT INTO gg_trip_4(tno,tcno,name,image,content,addr) VALUES(gt_tno_seq_4.nextval,4,?,?,?,?)";
 			
 			ps=conn.prepareStatement(sql);
 			//?에 값 채우기
@@ -160,7 +160,7 @@ public class TripDAO {
 		{
 			getConnection();
 			
-			String sql="INSERT INTO festival_4(fno,name,image,content,period,web,addr) VALUES(f_fno_seq_4.nextval,?,?,?,?,?,?)";
+			String sql="INSERT INTO gg_festival_4(fno,name,image,content,period,web,addr) VALUES(gf_fno_seq_4.nextval,?,?,?,?,?,?)";
 			
 			ps=conn.prepareStatement(sql);
 			//?에 값 채우기

@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR" import="java.util.*,com.sist.dao.*"%>
 <%
-	//자바 코딩 위치
-	FoodDAO dao=new FoodDAO();
+//자바 코딩 위치
+	FoodDetailDAO dao=new FoodDetailDAO();
 	String strPage=request.getParameter("page"); //입력이 아닌 선택된 값을 받아옴
 	if(strPage==null) //맨처음은 선택 받기 전이므로 null값
 	{
@@ -11,7 +11,6 @@
 	int totalpage=dao.foodTotalPage(); //총페이지 구하기
 	int curpage=Integer.parseInt(strPage); //현재페이지
 	ArrayList<FoodVO> list=dao.foodListData(curpage);
-
 %>
 <!DOCTYPE html>
 <html>
@@ -37,8 +36,8 @@ h1{
 	<div class="container">
 	  <div class="row">
 	    <%
-	      for(FoodVO vo:list)
-	      {
+	    for(FoodVO vo:list)
+	    	    	      {
 	    %>
 	    	   <!-- col-md-N 관련 : 12가 되면 넘어감, 3이면 4개씩, 6이면 2개씩-->
 	    	   <div class="col-md-3">

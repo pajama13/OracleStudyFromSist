@@ -1,9 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR" import="java.util.*,com.sist.dao.*"%>
 <%
-    //1. 보내준 데이터를 받는다 ?fno=10
+//1. 보내준 데이터를 받는다 ?fno=10
     String fno=request.getParameter("fno");
-    FoodDAO dao=new FoodDAO();
+    FoodDetailDAO dao=new FoodDetailDAO();
     FoodVO vo=dao.foodDetailData(Integer.parseInt(fno));
 %>
 <!DOCTYPE html>

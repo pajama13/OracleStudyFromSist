@@ -32,11 +32,11 @@ public class TripDataCollectionService {
 	public static void main(String[] args) {
 		TripDataCollectionService tcs=new TripDataCollectionService();
 		
-		//tcs.landmarkDetailData();  //12.31 실행완료
-		tcs.natureDetailData();	 //12.31 실행완료
-		//tcs.entertainmentDetailData(); // 12.31 실행완료
-		//tcs.shoppingDetailData(); //12.31 실행완료
-		//tcs.FestivalDetailData(); //12.31 실행완료
+		//tcs.landmarkDetailData();  //01.02 실행완료
+		//tcs.natureDetailData();	 //01.02 실행완료
+		//tcs.entertainmentDetailData(); // 01.02 실행완료
+		//tcs.shoppingDetailData(); //01.02 실행완료
+		tcs.FestivalDetailData(); //12.31 실행완료
 	}
 	
 	//명소
@@ -201,11 +201,11 @@ public class TripDataCollectionService {
 						System.out.println(addr);
 						System.out.println("");
 						
-//						vo.setName(name.text());
-//						vo.setImage(image);
-//						vo.setContent(content.text());
-//						vo.setAddr(addr);
-//						dao.natureDetailInsert(vo); //카테고리
+						vo.setName(name.text());
+						vo.setImage(image);
+						vo.setContent(content.text());
+						vo.setAddr(addr);
+						dao.natureDetailInsert(vo); //카테고리
 						
 					}catch(Exception ex)
 					{ 
